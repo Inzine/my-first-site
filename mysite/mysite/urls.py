@@ -20,7 +20,8 @@ from django.urls import path
 
 urlpatterns = [
 	#path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     url(r'', include('polls.urls')),
+    url(r'^admin/', admin.site.urls),
     url(r'^polls/', include('polls.urls')),
 ]
